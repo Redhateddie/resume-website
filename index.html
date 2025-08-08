@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eddie Coleman — Resume</title>
+  <style>
+    :root{
+      --accent:#0b5fff;
+      --muted:#666;
+      --bg:#f6f7fb;
+      --card:#fff;
+      --maxw:900px;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    body{background:var(--bg); margin:20px; display:flex; justify-content:center;}
+    .wrap{max-width:var(--maxw); width:100%;}
+    .card{background:var(--card); padding:28px; border-radius:12px; box-shadow:0 6px 20px rgba(12,20,40,0.06);}
+    header{display:flex; justify-content:space-between; gap:12px; align-items:center; margin-bottom:18px;}
+    h1{margin:0; font-size:22px;}
+    .contact{font-size:14px; color:var(--muted); text-align:right;}
+    .section{margin-top:14px;}
+    .muted{color:var(--muted);}
+    ul{margin:8px 0 0 18px;}
+    .two-col{display:grid; grid-template-columns:1fr 340px; gap:18px;}
+    @media (max-width:800px){ .two-col{grid-template-columns:1fr; } .contact{text-align:left;} }
+    .pill{display:inline-block; padding:6px 10px; border-radius:999px; background:#eef4ff; color:var(--accent); font-weight:600; font-size:12px;}
+    .job-title{font-weight:700;}
+    .small{font-size:13px;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header>
+        <div>
+          <h1>Eddie Coleman</h1>
+          <div class="muted small">Merrifield, Virginia</div>
+          <div class="muted small">Penn Foster University — Associate/Bachelor of Science in Cyber Security (GPA: 3.45)</div>
+        </div>
+        <div class="contact">
+          <div>(123) 456-7890</div>
+          <div>eddie.coleman@email.com</div>
+          <div><a href="#" target="_blank">LinkedIn</a> • <a href="#" target="_blank">GitHub</a></div>
+        </div>
+      </header>
+
+      <div class="section">
+        <div class="pill">Summary</div>
+        <p class="muted small">
+          A highly driven and results-oriented IT professional with a robust and dynamic background in Linux system
+          administration and cutting-edge Amazon Web Services (AWS) cloud practices. Adept at navigating complex system
+          architectures, proactive troubleshooting, system automation, and security best practices.
+        </p>
+      </div>
+
+      <div class="section two-col">
+        <main>
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:start;">
+              <div>
+                <h3 style="margin:0;">Experience</h3>
+                <div class="muted small">Linux System Administrator — Cloud Tech, Fayetteville, NC | 2024 – Present</div>
+                <ul>
+                  <li>Spearheaded management and maintenance of Linux servers (Ubuntu, CentOS) achieving high availability.</li>
+                  <li>Orchestrated system updates, security patching and backups to preserve integrity and resilience.</li>
+                  <li>Implemented monitoring and performance optimization (CPU, memory, disk I/O).</li>
+                  <li>Diagnosed and resolved complex OS, application, and networking issues to reduce downtime.</li>
+                  <li>Architected and enforced security controls including user access, firewall configurations.</li>
+                  <li>Adopted automation and tooling to reduce manual tasks and improve team productivity.</li>
+                </ul>
+
+                <div style="margin-top:14px;">
+                  <div class="muted small">AWS Cloud Practitioner — PowerTech Solutions, Costa Mesa, CA | Jul 2022 – 2025</div>
+                  <ul>
+                    <li>Designed and deployed static websites on S3 backed by CloudFront for fast secure delivery.</li>
+                    <li>Managed IAM roles and policies to enforce secure access control patterns.</li>
+                    <li>Provisioned and optimized EC2 instances and managed VPC network design.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top:16px;">
+              <h3 style="margin:0;">Projects</h3>
+              <ul>
+                <li><strong>Static Resume Website Hosting on AWS</strong> — Designed and implemented static site on S3 + CloudFront with TLS and Route 53 DNS.</li>
+                <li><strong>Automated Infrastructure Deployment with Ansible</strong> — Automated backups and system provisioning using Ansible playbooks and Bash/Python helper scripts.</li>
+                <li><strong>Dockerized Microservice Environment</strong> — Containerized local dev stack to standardize environment and speed onboarding.</li>
+              </ul>
+            </div>
+          </div>
+        </main>
+
+        <aside>
+          <div style="background:#fafafa; padding:12px; border-radius:8px;">
+            <h4 style="margin:6px 0;">Core Competencies</h4>
+            <ul class="small muted">
+              <li>Linux Administration: Ubuntu, CentOS, Red Hat</li>
+              <li>AWS: EC2, S3, IAM, VPC, Route 53, CloudFront</li>
+              <li>Automation: Ansible, Bash, Python, CI/CD</li>
+              <li>Monitoring & Security: Splunk, Firewalls, VPNs</li>
+              <li>DevOps: Git, Docker, Jenkins, SSH</li>
+            </ul>
+          </div>
+
+          <div style="margin-top:10px; background:#fafafa; padding:12px; border-radius:8px;">
+            <h4 style="margin:6px 0;">Contact</h4>
+            <div class="small muted">Open to entry-level Cloud / Linux roles. Available immediately for interviews.</div>
+          </div>
+        </aside>
+      </div>
+
+      <footer style="margin-top:18px; text-align:center; color:var(--muted); font-size:13px;">
+        Resume generated for deployment on AWS Amplify / S3 + CloudFront
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
